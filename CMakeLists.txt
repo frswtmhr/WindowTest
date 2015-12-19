@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.9)
+project(Hello)
+find_package(FLTK REQUIRED)
+include_directories(${FLTK_INCLUDE_DIR})
+add_executable(hello main.cpp)
+target_link_libraries(hello ${FLTK_LIBRARIES})
